@@ -1,7 +1,7 @@
 {
-  "name": "dsh-usage-dashboard",
-  "version": "0.1.1-local",
-  "description": "DeepSeek Harness (dsh) web plugin: API balance + today's spend widget in the sidebar footer. /api/dsh-usage route + React client bundle, no build step required.",
+  "name": "dsh-usage-dashboard-plus",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness (dsh) web plugin: API balance + today's spend widget in the sidebar footer. /api/dsh-usage route + React client bundle, no build step required. Plus: counts external vision-model calls (vision-fallback usage log) into the stats.",
   "keywords": [
     "dsh",
     "dsh-plugin",
@@ -10,7 +10,8 @@
     "balance",
     "usage",
     "cost",
-    "web"
+    "web",
+    "vision"
   ],
   "license": "MIT",
   "type": "module",
@@ -28,10 +29,12 @@
   "files": [
     "lib",
     "README.md",
+    "README.zh.md",
     "LICENSE"
   ],
-  "scripts": {
-    "test": "node tests/run-tests.mjs"
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "dependencies": {
     "@deepseek-ai/schemastery": "^3.18.1",
@@ -43,8 +46,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/1690834643/dsh-usage-dashboard.git"
+    "url": "git+https://github.com/1HelloMan1/dsh-usage-dashboard-plus.git"
   },
+  "bugs": {
+    "url": "https://github.com/1HelloMan1/dsh-usage-dashboard-plus/issues"
+  },
+  "homepage": "https://github.com/1HelloMan1/dsh-usage-dashboard-plus#readme",
   "devDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
