@@ -37,6 +37,8 @@ dsh plugin --profile web add dsh-usage-dashboard-plus
 # 重启 `dsh web`（profile patch 层不支持热加载）
 ```
 
+npm 包内置 `dsh.bundle` 与 `cordis.patch.yml`，安装命令会自动把 `usage-dashboard` 插入目标 profile，不需要手工复制插件目录或编辑 patch。
+
 验证：
 
 ```sh
@@ -75,7 +77,7 @@ usage-dashboard:
 ## 开发
 
 ```sh
-# 无需构建；如补充测试用 node --test tests/run-tests.mjs
+npm test    # 校验 npm 包、dsh.bundle 和 cordis.patch.yml
 ```
 
 ## 许可证

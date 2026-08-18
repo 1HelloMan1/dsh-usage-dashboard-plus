@@ -1,6 +1,6 @@
 {
   "name": "dsh-usage-dashboard-plus",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "DeepSeek Harness (dsh) web plugin: API balance + today's spend sidebar widget, /api/dsh-usage route, external vision-call accounting (JSONL usage log), plus a full per-session usage dashboard (call log, per-model stats, cache rate, CSV export) via the usageDashboard session projection — merged from dsh-stats-dashboard.",
   "keywords": [
     "dsh",
@@ -40,6 +40,7 @@
     "lib",
     "test",
     "cordis.patch.yml",
+    "CHANGELOG.md",
     "README.md",
     "README.zh.md",
     "LICENSE"

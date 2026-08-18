@@ -37,6 +37,8 @@ dsh plugin --profile web add dsh-usage-dashboard-plus
 # restart `dsh web` — the profile patch layer is not hot-reloaded
 ```
 
+The npm package ships `dsh.bundle` and `cordis.patch.yml`, so the install command inserts `usage-dashboard` into the target profile without manual directory copies or patch editing.
+
 Verify:
 
 ```sh
@@ -75,7 +77,7 @@ Default path: `<dsh home>/vision-fallback/usage.jsonl`. Set `externalUsageLog: o
 ## Development
 
 ```sh
-# no build step; node --test tests/run-tests.mjs if you add tests
+npm test    # validates the npm package, dsh.bundle, and cordis.patch.yml
 ```
 
 ## License
