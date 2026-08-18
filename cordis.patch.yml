@@ -1,0 +1,5 @@
+# dsh-usage-dashboard-plus bundle patch.
+# Registers the host plugin and its web client in the selected DSH profile.
+- insert:
+    - id: usage-dashboard
+      name: 'dsh-usage-dashboard-plus'
