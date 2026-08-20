@@ -5,6 +5,7 @@
 - Sidebar widget is now a compact "¥" button with no inline balance/spend text, so it no longer overlaps sibling footer-action buttons.
 - Clicking the button opens a draggable floating window (centered in the viewport, clamped while dragging) showing balance, today's spend, tokens and per-model costs; close via × or Esc, refresh from the window header.
 
+- Do-not-estimate non-official providers in the sidebar “today's spend”: the estimate now filters by provider and by default excludes opencode-go (and other non-official channels) via the configurable `excludeProviders`, so it reflects official DeepSeek API consumption only.
 ## 0.2.4 - 2026-08-18
 
 - Added the required `dsh.bundle` manifest and `cordis.patch.yml` so `dsh plugin add` can install the package directly.
